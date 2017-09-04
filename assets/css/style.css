@@ -1,0 +1,14 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+
+	background-color: black;
+	color: red;
+}
+
+.work{
+
+	border: 2px dotted red;
+}
