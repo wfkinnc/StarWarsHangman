@@ -3,25 +3,49 @@
 <head>
 <title>STAR WARS Hangman</title>
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
-
+<link href="https://fonts.googleapis.com/css?family=Russo+One" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/javascript/game.js"></script>
 </head>
 <body>
 
 <div class="container">
 	<div class="row">
-		<img src="assets/images/StarWarsLogo.png" style="width: 200px; height: 150px;"><div style="float: left;">HangMan</div>
+		<div style="border: 1px solid blue; padding: 20px;" >
+			<img src="assets/images/StarWarsLogo.png" style="width: 200px; height: 150px;">
 
+
+		</div>
+		<div style="float: left; font-family: 'Russo One', sans-serif; font-size: 50px; padding: 5%">HangMan</div>
 	</div>
 
 	<div class="row">
 		<div class="work" id="leftWork">
-ss
+			<div style="padding: 20px">
+				Click the Star Wars picture below to start the game and get a word!<br><br>
+			</div>
+			<img id="leftPict" src="assets/images/star-wars-start.png" style="width: 100%; padding: 15px;">
+
+
+				<audio controls preload="auto" id="myAudio">
+				  <source name="text" src="assets/audio/Imperial-March.ogx" type="audio/ogg">
+				  Your browser does not support the audio element.
+				</audio> 
+
 		</div>
 
-		<div class="work" id="rightWork">
-ss
+		<div class="work" id="rightWork" style="padding: 20px; text-align: center;">
+				Click the Picture on the left to Start the  game!<br>
+				Wins<br>
+
+				<span id="numWins">0</span><br>
+				<span>CurrentWord</span><br>
+				<span id="currentWord"></span><br>
+				<span id="currWordUnderscored"></span><br>
+				<span id="numGuessesRemaining">0</span><br>
+				<span id="guessedLetters"></span>
+
 		</div>
 	</div>
 
